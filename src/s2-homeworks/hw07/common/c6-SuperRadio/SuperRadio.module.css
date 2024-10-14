@@ -1,15 +1,16 @@
 .radio {
+
 }
 
 .radio::before {
 }
 
-
-.radio:checked::before {
+.radio:checked {
 }
 
 .label {
 }
 
 .options {
+
 }

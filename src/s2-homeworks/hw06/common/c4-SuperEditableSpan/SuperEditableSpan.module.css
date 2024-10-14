@@ -1,11 +1,38 @@
-.spanBlock {
-}
-
-.span {
-}
+/* SuperEditableSpan.module.css */
 
 .input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #007bff;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Ограничиваем ширину */
+    /* max-width: 300px; Максимальная ширина */
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+}
+
+.input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    width: 100%; /* Ограничиваем ширину */
+
+}
+
+.spanBlock {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .pen {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.span {
+    font-size: 26px;
+    color: #3b56f3;
 }

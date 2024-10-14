@@ -7,8 +7,11 @@ type PropsType = {
 }
 
 export const Layout: FC<PropsType> = ({ children }) => {
+    
     const [open, setOpen] = useState(false)
+
     const handleClose = () => setOpen(false)
+    
     const handleOpen = () => setOpen(true)
 
     useEffect(() => {
