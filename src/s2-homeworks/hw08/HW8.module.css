@@ -1,23 +1,84 @@
-.item {
-}
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.item:last-of-type {
-}
-
+/* Общие стили для таблицы */
 .users {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif; /* Шрифт для текста таблицы */
 }
 
-.buttonsContainer {
+/* Стили для строк таблицы */
+.item {
+    border-bottom: 1px solid #ccc; /* Разделение строк линией */
 }
 
+/* Убираем линию у последней строки */
+.item:last-of-type {
+    border-bottom: none;
+}
+
+/* Стили для контейнера */
 .container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
+/* Стили для контейнера кнопок */
+.buttonsContainer {
+    display: flex;
+    gap: 12px; /* Расстояние между кнопками */
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовка таблицы */
 .thead {
+    background-color: #f2f2f2; /* Серый фон для заголовка */
+    font-weight: bold;
 }
 
+/* Стили для колонок таблицы */
+.nameCol, .ageCol {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Ширина колонок */
 .nameCol {
+    width: 70%;
 }
 
 .ageCol {
+    width: 30%;
+}
+
+/* Общие стили для кнопок */
+.buttonsContainer button {
+    font-family: 'Montserrat', sans-serif; /* Шрифт для кнопок */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход для цвета фона */
+}
+
+/* Стили для неактивных кнопок */
+.buttonsContainer button.secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Стили для активных кнопок */
+.buttonsContainer button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Стили для кнопок при наведении */
+.buttonsContainer button:hover {
+    background-color: #0056b3;
+    color: #fff;
 }
